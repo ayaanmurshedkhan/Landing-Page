@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", serif;
+}
+:root {
+    --mainColor: #1f2937;
+    --heroSecText: #e5e7eb;
+    --logoColor: #f9faf8;
+    --btnColor: #3882f6;
+    --quoteBackground: #e5e7eb;
+    --quoteText: #1f2937;
+}
+
+a {
+    text-decoration: none;
+    color: var(--heroSecText);
+}
+
+    /* start nav section */
+
+header {
+    height: 10vh;
+    width: 100%;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 33vh;
+    .logo {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--logoColor);
+    }
+    nav {
+        display: flex;
+        gap: 23px;
+        color: var(--heroSecText);
+    }
+}
+
+    /* start main section */
+
+main {
+    height: 70vh;
+    width: 100%;
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 33vh;
+    .titleArea {
+        height: 40vh;
+        width: 70vh;
+        display: flex;
+        padding: 15px 0;
+        flex-direction: column;
+        gap: 12px;
+        h1 {
+            font-size: 45px;
+            color: var(--heroSecText);
+        }
+        p {
+            color: var(--logoColor);
+        }
+        .signup-btn {
+            height: 5vh;
+            width: 17vh;
+            background-color: var(--btnColor);
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            color: var(--heroSecText);
+        }
+    }
+    img {
+        height: 35vh;
+        width: 60vh;
+        border-radius: 20px;
+    }
+}
+
+    /* start section area 1 */
+
+.first-sub-section {
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 33vh;
+    gap: 8vh;
+    .titleText {
+        h2 {
+            font-size: 35px;
+            letter-spacing: 0px;
+        }
+    }
+    .boxImageArea {
+        display: flex;
+        gap: 55px;
+        .image {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 23vh;
+            gap: 5px;
+            img {
+                height: 25vh;
+                border-radius: 15px;
+                border: 3px solid var(--btnColor);
+            }
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+    /* start section area 2 */
+
+.secound-sub-section {
+    height: 60vh;
+    background-color: var(--quoteBackground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50vh;
+    .quoteArea {
+        i {
+            font-size: 30px;
+            font-weight: 300;
+        }
+    }
+    .authorNameArea {
+        width: 95vh;
+        display: flex;
+        justify-content: flex-end;
+        p {
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+}
+
+    /* start section area 3 */
+
+.third-sub-section {
+    padding: 15vh 33vh;
+    .third-div-area {
+        background-color: var(--btnColor);
+        height: 22vh;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20vh;
+        .textArea {
+            h5 {
+                font-size: 22px;
+                color: var(--logoColor);
+            }
+            p {
+                color: var(--heroSecText);
+            }
+        }
+        .signupBtnArea {
+            .signup-btn-btn {
+                height: 5vh;
+                width: 17vh;
+                background-color: var(--btnColor);
+                color: var(--heroSecText);
+                border: 2px solid var(--heroSecText);
+                border-radius: 5px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+    /* start footer section */
+
+footer {
+    height: 15vh;
+    background-color: var(--mainColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        color: var(--heroSecText);
+    }
+}
